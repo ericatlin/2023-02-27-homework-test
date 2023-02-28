@@ -176,26 +176,7 @@ namespace _2023_02_27_homework_test
                 e.Handled = true;
             }
         }
-        private void AutoSizeColumn(DataGridView dgViewFiles)
-         {
-             int width = 0;
-             
-             for (int i = 0; i < dgViewFiles.Columns.Count; i++)
-             {
-                 dgViewFiles.AutoResizeColumn(i, DataGridViewAutoSizeColumnMode.AllCells);
-                 width += dgViewFiles.Columns[i].Width;
-             }
-             if (width > dgViewFiles.Size.Width)
-             {
-                 dgViewFiles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-             }
-             else
-             {
-                 dgViewFiles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-             }
-             dgViewFiles.Columns[1].Frozen = true;
-            AutoSizeColumn(dgViewFiles);
-        }
+        
         
     }
     

@@ -121,6 +121,7 @@
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("新細明體", 11F);
             this.textBox2.Location = new System.Drawing.Point(130, 27);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
@@ -139,6 +140,7 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("新細明體", 11F);
             this.textBox3.Location = new System.Drawing.Point(249, 27);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
@@ -157,6 +159,7 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("新細明體", 11F);
             this.textBox4.Location = new System.Drawing.Point(367, 27);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 22);
@@ -184,6 +187,7 @@
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("新細明體", 11F);
             this.textBox5.Location = new System.Drawing.Point(12, 117);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 22);
@@ -198,7 +202,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(524, 15);
             this.label5.TabIndex = 15;
-            this.label5.Text = "*如果要進行修改即刪除請在上方空格填上商品ID，修改請在最上方填上修改值";
+            this.label5.Text = "*如果要進行修改及刪除請在上方空格填上商品ID，修改請在最上方填上修改值";
             // 
             // label6
             // 

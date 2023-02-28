@@ -93,6 +93,7 @@ namespace _2023_02_27_homework_test
                 db.SaveChanges();
                 MessageBox.Show("修改成功");
                 textBox5.Clear();
+                ClearTextBoxes();
             }
             catch (Exception ex)
             {
@@ -123,6 +124,7 @@ namespace _2023_02_27_homework_test
             db.Product_Table.Remove(c);
             db.SaveChanges();
             textBox5.Clear();
+            ClearTextBoxes();
             MessageBox.Show("刪除成功");
         }
 

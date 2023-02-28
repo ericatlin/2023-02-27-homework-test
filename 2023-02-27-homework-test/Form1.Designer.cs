@@ -1,5 +1,6 @@
 ﻿namespace _2023_02_27_homework_test
 {
+
     partial class Form1
     {
         /// <summary>
@@ -43,14 +44,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(487, 12);
+            this.button1.Location = new System.Drawing.Point(487, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 37);
+            this.button1.Size = new System.Drawing.Size(127, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "新增商品";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,7 +61,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(634, 72);
+            this.button2.Location = new System.Drawing.Point(392, 107);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 37);
             this.button2.TabIndex = 1;
@@ -68,7 +71,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(487, 72);
+            this.button3.Location = new System.Drawing.Point(261, 107);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(125, 37);
             this.button3.TabIndex = 2;
@@ -78,7 +81,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(634, 12);
+            this.button4.Location = new System.Drawing.Point(130, 107);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(125, 37);
             this.button4.TabIndex = 3;
@@ -88,7 +91,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(487, 131);
+            this.button5.Location = new System.Drawing.Point(663, 131);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 37);
             this.button5.TabIndex = 4;
@@ -109,9 +112,10 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("新細明體", 11F);
             this.textBox1.Location = new System.Drawing.Point(12, 27);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
@@ -180,17 +184,39 @@
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(12, 72);
+            this.textBox5.Location = new System.Drawing.Point(12, 117);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(455, 22);
+            this.textBox5.Size = new System.Drawing.Size(100, 22);
             this.textBox5.TabIndex = 14;
             this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("新細明體", 11F);
+            this.label5.Location = new System.Drawing.Point(9, 153);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(524, 15);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "*如果要進行修改即刪除請在上方空格填上商品ID，修改請在最上方填上修改值";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("新細明體", 11F);
+            this.label6.Location = new System.Drawing.Point(12, 99);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 15);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "商品ID";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox4);
@@ -241,6 +267,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn producttypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

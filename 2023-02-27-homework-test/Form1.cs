@@ -19,7 +19,7 @@ namespace _2023_02_27_homework_test
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             if ((textBox1.Text.Trim() == "") || (textBox2.Text.Trim() == "") | (textBox3.Text.Trim() == "")| (textBox4.Text.Trim() == ""))
@@ -175,10 +175,28 @@ namespace _2023_02_27_homework_test
                 MessageBox.Show("輸入錯誤，請輸入數字");
                 e.Handled = true;
             }
-            
         }
-
-
+        private void AutoSizeColumn(DataGridView dgViewFiles)
+         {
+             int width = 0;
+             
+             for (int i = 0; i < dgViewFiles.Columns.Count; i++)
+             {
+                 dgViewFiles.AutoResizeColumn(i, DataGridViewAutoSizeColumnMode.AllCells);
+                 width += dgViewFiles.Columns[i].Width;
+             }
+             if (width > dgViewFiles.Size.Width)
+             {
+                 dgViewFiles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+             }
+             else
+             {
+                 dgViewFiles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+             }
+             dgViewFiles.Columns[1].Frozen = true;
+            AutoSizeColumn(dgViewFiles);
+        }
+        
     }
     
     
